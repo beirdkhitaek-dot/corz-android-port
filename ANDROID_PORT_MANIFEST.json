@@ -1,0 +1,16 @@
+{
+  "project": "CorzClient",
+  "edition": "Android compatibility for Zalith Launcher 2",
+  "minecraft": "1.21.11",
+  "loader": "Fabric",
+  "java": 21,
+  "changes": [
+    "Added AndroidRuntime platform detection",
+    "Disabled Discord Rich Presence on Android",
+    "Skipped Windows file attribute and PowerShell cleanup on Android",
+    "Replaced Android desktop file picker path with an in-client notice",
+    "Added ANDROID_ZALITH.md installation and compatibility notes"
+  ],
+  "build_verified": false,
+  "build_limitation": "Gradle distribution could not be downloaded because services.gradle.org was unreachable."
+}
