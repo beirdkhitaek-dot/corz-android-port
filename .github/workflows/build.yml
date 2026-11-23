@@ -3,7 +3,9 @@ name: Build CorzClient
 on:
   push:
     branches: [main]
+    paths-ignore: ['echo/**', '.github/workflows/build-echo.yml']
   pull_request:
+    paths-ignore: ['echo/**', '.github/workflows/build-echo.yml']
   workflow_dispatch:
 
 permissions:

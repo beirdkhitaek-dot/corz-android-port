@@ -4,3 +4,5 @@ run/
 .idea/
 *.iml
 libs/*.jar
+echo/.gradle/
+echo/build/
