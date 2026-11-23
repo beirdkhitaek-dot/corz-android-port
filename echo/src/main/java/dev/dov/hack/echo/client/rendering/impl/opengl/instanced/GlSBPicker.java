@@ -35,6 +35,6 @@ public final class GlSBPicker {
     }
 
     public int colorAt(float hue) {
-        return java.awt.Color.HSBtoRGB(hue, this.saturation, this.brightness);
+        return dev.dov.hack.echo.client.util.Color.HSBtoRGB(hue, this.saturation, this.brightness);
     }
 }

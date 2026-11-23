@@ -1,6 +1,6 @@
 package dev.dov.hack.echo.client.ui;
 
-import java.awt.Color;
+import dev.dov.hack.echo.client.util.Color;
 
 public class ColorTheme {
     public static float PANEL_WIDTH;
@@ -190,17 +190,17 @@ public class ColorTheme {
     }
 
     
-    public static java.awt.Color bootstrapForegroundColor() {
+    public static dev.dov.hack.echo.client.util.Color bootstrapForegroundColor() {
         return foregroundColor;
     }
 
     
-    public static java.awt.Color bootstrapPrimaryColor() {
+    public static dev.dov.hack.echo.client.util.Color bootstrapPrimaryColor() {
         return primaryColor;
     }
 
     
-    public static java.awt.Color bootstrapSecondaryColor() {
+    public static dev.dov.hack.echo.client.util.Color bootstrapSecondaryColor() {
         return secondaryColor;
     }
 }

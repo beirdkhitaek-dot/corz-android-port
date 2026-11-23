@@ -7,7 +7,7 @@ import dev.dov.hack.echo.client.keyboard.InputKey;
 import dev.dov.hack.echo.client.render.ui.UiRenderer;
 import dev.dov.hack.echo.client.ui.ColorTheme;
 import dev.dov.hack.echo.client.render.font.FontAsset;
-import java.awt.Color;
+import dev.dov.hack.echo.client.util.Color;
 import java.util.ArrayList;
 import java.util.List;
 

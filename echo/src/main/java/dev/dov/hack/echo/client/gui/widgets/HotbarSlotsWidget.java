@@ -10,7 +10,7 @@ import dev.dov.hack.echo.client.ui.ColorTheme;
 import dev.dov.hack.echo.client.ui.HintRenderer;
 import dev.dov.hack.echo.client.gui.animations.Easing;
 import dev.dov.hack.echo.client.gui.animations.Tween;
-import java.awt.Color;
+import dev.dov.hack.echo.client.util.Color;
 
 public class HotbarSlotsWidget implements SettingWidget {
     private static final float SLOT_GAP = 1.5f;

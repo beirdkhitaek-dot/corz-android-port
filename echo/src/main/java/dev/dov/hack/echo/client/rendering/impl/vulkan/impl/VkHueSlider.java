@@ -25,6 +25,6 @@ public final class VkHueSlider {
     }
 
     public int colorAt(float fraction) {
-        return java.awt.Color.HSBtoRGB(Math.max(0.0f, Math.min(1.0f, fraction)), 0.85f, 1.0f);
+        return dev.dov.hack.echo.client.util.Color.HSBtoRGB(Math.max(0.0f, Math.min(1.0f, fraction)), 0.85f, 1.0f);
     }
 }

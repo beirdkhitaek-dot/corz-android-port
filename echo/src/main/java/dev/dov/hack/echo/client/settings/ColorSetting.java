@@ -1,6 +1,6 @@
 package dev.dov.hack.echo.client.settings;
 
-import java.awt.Color;
+import dev.dov.hack.echo.client.util.Color;
 import java.util.function.Predicate;
 
 public class ColorSetting extends Setting {

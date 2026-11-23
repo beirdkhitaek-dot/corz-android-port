@@ -117,7 +117,7 @@ public final class FeatureDefaults {
         dev.dov.hack.echo.client.settings.FloatSetting preparedMinDamage = new dev.dov.hack.echo.client.settings.FloatSetting(CatalogText.literal("Min Damage"), 6.0f, 0.0f, 20.0f, 0.5f, CatalogText.literal(" dmg"));
         dev.dov.hack.echo.client.settings.BooleanSetting preparedCanPlaceLegit = new dev.dov.hack.echo.client.settings.BooleanSetting(CatalogText.literal("Can Place Legit"), true);
         dev.dov.hack.echo.client.settings.FloatRangeSetting preparedSafeBlockDelay = new dev.dov.hack.echo.client.settings.FloatRangeSetting(CatalogText.literal("Safe block delay"), 0.0f, 1.0f, 0.0f, 10.0f, 1.0f, CatalogText.literal(" ticks"));
-        dev.dov.hack.echo.client.settings.ColorSetting preparedOutlineColor = new dev.dov.hack.echo.client.settings.ColorSetting(CatalogText.literal("Outline Color"), java.awt.Color.WHITE.getRGB(), true);
+        dev.dov.hack.echo.client.settings.ColorSetting preparedOutlineColor = new dev.dov.hack.echo.client.settings.ColorSetting(CatalogText.literal("Outline Color"), dev.dov.hack.echo.client.util.Color.WHITE.getRGB(), true);
         dev.dov.hack.echo.client.settings.IntSetting preparedSafetyTimeout = new dev.dov.hack.echo.client.settings.IntSetting(CatalogText.literal("Safety Timeout"), 200, 0, 1000, CatalogText.literal(" ms"));
         dev.dov.hack.echo.client.settings.ChoiceSetting preparedMode = new dev.dov.hack.echo.client.settings.ChoiceSetting(CatalogText.literal("Mode"), dev.dov.hack.echo.client.modules.impl.combat.AutoAnchor.bootstrapModeOption(), new java.lang.CharSequence[] {dev.dov.hack.echo.client.modules.impl.combat.AutoAnchor.bootstrapModeOption2(), dev.dov.hack.echo.client.modules.impl.combat.AutoAnchor.bootstrapModeOption()});
         dev.dov.hack.echo.client.settings.BooleanSetting preparedGlowstoneStart = new dev.dov.hack.echo.client.settings.BooleanSetting(CatalogText.literal("Glowstone Start"), false);
@@ -281,7 +281,7 @@ public final class FeatureDefaults {
     public static void initialize(dev.dov.hack.echo.client.modules.impl.combat.Backtrack Module) {
 
         dev.dov.hack.echo.client.settings.HotbarSlotsSetting preparedHotbarWhitelist = new dev.dov.hack.echo.client.settings.HotbarSlotsSetting(CatalogText.literal("Hotbar Whitelist"));
-        dev.dov.hack.echo.client.settings.ColorSetting preparedOutlineColor = new dev.dov.hack.echo.client.settings.ColorSetting(CatalogText.literal("Outline Color"), java.awt.Color.WHITE.getRGB(), true);
+        dev.dov.hack.echo.client.settings.ColorSetting preparedOutlineColor = new dev.dov.hack.echo.client.settings.ColorSetting(CatalogText.literal("Outline Color"), dev.dov.hack.echo.client.util.Color.WHITE.getRGB(), true);
         dev.dov.hack.echo.client.settings.IntSetting preparedMaximumHurtTime = new dev.dov.hack.echo.client.settings.IntSetting(CatalogText.literal("Maximum Hurt Time"), 10, 0, 10, CatalogText.literal(" ticks"));
         dev.dov.hack.echo.client.settings.FloatRangeSetting preparedHoldTime = new dev.dov.hack.echo.client.settings.FloatRangeSetting(CatalogText.literal("Hold Time"), 100.0f, 100.0f, 0.0f, 500.0f, 5.0f, CatalogText.literal(" ms"));
         dev.dov.hack.echo.client.settings.ItemListSetting preparedItemWhitelist = new dev.dov.hack.echo.client.settings.ItemListSetting(CatalogText.literal("Item Whitelist"));

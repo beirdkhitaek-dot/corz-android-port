@@ -88,12 +88,25 @@ public final class SvgTextureCache implements AutoCloseable {
 
     private static final class Rasterizer {
         private final Map<String, SVGDocument> documents = new ConcurrentHashMap<>();
+        private volatile boolean awtWarned;
 
         ByteBuffer rasterize(SvgTextureKey key) {
             ByteBuffer pixels = MemoryUtil.memAlloc(key.width() * key.height() * 4);
             try {
                 SVGDocument document = documents.computeIfAbsent(key.resourcePath(), this::load);
                 SvgRasterizer.downsample(SvgRasterizer.renderSupersampled(document, key.width(), key.height()), key.width(), key.height(), key.colorMode(), pixels);
+                return pixels.flip();
+            } catch (LinkageError awtUnavailable) {
+                // Android runtimes may ship without the desktop AWT natives. Draw an empty
+                // icon instead of crashing; the rest of the client keeps working.
+                if (!awtWarned) {
+                    awtWarned = true;
+                    System.err.println("[Echo] SVG icons disabled: AWT is unavailable on this runtime (" + awtUnavailable + ")");
+                }
+                pixels.clear();
+                while (pixels.hasRemaining()) {
+                    pixels.put((byte) 0);
+                }
                 return pixels.flip();
             } catch (RuntimeException | Error failure) {
                 MemoryUtil.memFree((java.nio.Buffer) pixels);

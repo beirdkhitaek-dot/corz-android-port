@@ -15,7 +15,7 @@ import dev.dov.hack.echo.client.ui.HintRenderer;
 import dev.dov.hack.echo.client.gui.animations.Easing;
 import dev.dov.hack.echo.client.gui.animations.Tween;
 import dev.dov.hack.echo.client.utils.strings.TextBuffers;
-import java.awt.Color;
+import dev.dov.hack.echo.client.util.Color;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;

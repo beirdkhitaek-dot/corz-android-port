@@ -1,6 +1,6 @@
 package dev.dov.hack.echo.client.ui;
 
-import java.awt.Color;
+import dev.dov.hack.echo.client.util.Color;
 
 public class BrandColors {
     public static final Color GREEN = new Color(82, 164, 108);

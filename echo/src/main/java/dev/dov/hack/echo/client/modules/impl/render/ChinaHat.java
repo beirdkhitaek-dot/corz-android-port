@@ -10,7 +10,7 @@ import dev.dov.hack.echo.client.settings.ChoiceSetting;
 import dev.dov.hack.echo.client.settings.ColorSetting;
 import dev.dov.hack.echo.client.settings.FloatSetting;
 import dev.dov.hack.echo.client.utils.strings.Concat;
-import java.awt.Color;
+import dev.dov.hack.echo.client.util.Color;
 import net.minecraft.util.math.Vec3d;
 import org.joml.Matrix4f;
 import org.joml.Vector3f;

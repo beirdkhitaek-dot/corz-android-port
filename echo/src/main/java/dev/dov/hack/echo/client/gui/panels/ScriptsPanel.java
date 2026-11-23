@@ -9,7 +9,7 @@ import dev.dov.hack.echo.client.ui.ColorTheme;
 import dev.dov.hack.echo.client.utils.strings.Concat;
 import dev.dov.hack.echo.client.render.font.FontAsset;
 import dev.dov.hack.echo.client.gfx.texture.TextureView;
-import java.awt.Color;
+import dev.dov.hack.echo.client.util.Color;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

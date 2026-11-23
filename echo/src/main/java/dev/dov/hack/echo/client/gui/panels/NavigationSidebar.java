@@ -5,7 +5,7 @@ import dev.dov.hack.echo.client.render.ui.UiRenderer;
 import dev.dov.hack.echo.client.ui.ColorTheme;
 import dev.dov.hack.echo.client.render.font.FontAsset;
 import dev.dov.hack.echo.client.gfx.texture.TextureView;
-import java.awt.Color;
+import dev.dov.hack.echo.client.util.Color;
 
 public class NavigationSidebar {
     private static final float BAR_HEIGHT = 30.0F;
